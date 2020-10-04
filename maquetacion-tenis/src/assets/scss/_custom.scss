@@ -53,20 +53,13 @@
 }
 
 .section-2 {
-    .carousel-1 {
-        .VueCarousel-slide {
-            position: relative;
-        }
+    .carousel-1,
+    .carousel-2 {
         .VueCarousel-pagination {
             position: absolute;
             bottom: 16px;
             @media(min-width: 992px) {
                 bottom: 151px;
-            }
-            .VueCarousel-dot-container {
-                .VueCarousel-dot--active {
-                    background-color: #cbe346 !important;
-                }
             }
         }
         .VueCarousel-navigation {
@@ -103,6 +96,18 @@
             }
         }
     }
+    .carousel-1 {
+        .VueCarousel-slide {
+            position: relative;
+        }
+        .VueCarousel-pagination {
+            .VueCarousel-dot-container {
+                .VueCarousel-dot--active {
+                    background-color: #cbe346 !important;
+                }
+            }
+        }
+    }
     .carousel-2 {
         .VueCarousel-slide {
             @media(min-width: 992px) {
@@ -110,6 +115,29 @@
                 &:first-child {
                     margin-left: 0;
                 }
+            }
+        }
+        .VueCarousel-pagination {
+            @media(min-width: 992px) {
+                display: none;
+            }
+            .VueCarousel-dot-container {
+                .VueCarousel-dot {
+                    background-color: #fff !important;
+                }
+                .VueCarousel-dot--active {
+                    background-color: #000 !important;
+                }
+            }
+        }
+        .VueCarousel-navigation {
+            @media(min-width: 992px) {
+                display: none;
+            }
+            button {
+                border: 1px solid #000;
+                color: #000;
+                background-color: #fff;
             }
         }
     }

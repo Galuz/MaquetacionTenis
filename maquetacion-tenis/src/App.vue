@@ -54,7 +54,7 @@
     
     <Carousel
       :perPageCustom="[[0, 1], [992, 3]]"
-      :paginationEnabled="false"
+      :navigationEnabled="true"
       class="carousel-2">
       <Slide>
         <img src="@/assets/images/racket.png" alt="">
@@ -257,6 +257,7 @@ export default {
       }
     }
     .carousel-2{
+      margin: 16px 0;
       @media(min-width: 992px){
         width: calc(100% - 582px);
         margin: auto 0 auto 52px;
