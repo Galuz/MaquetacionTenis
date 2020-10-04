@@ -37,6 +37,11 @@
                         }
                     }
                 }
+                &:first-child {
+                    .nav-link {
+                        padding-left: 0;
+                    }
+                }
                 &:last-child {
                     .nav-link {
                         padding: 7px 6px;
