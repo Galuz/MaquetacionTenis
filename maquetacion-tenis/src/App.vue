@@ -18,18 +18,37 @@
       </div>
     </section>
     <section class="section-2">
-      <Carousel>
+      <Carousel 
+        :perPageCustom="[[0, 1]]"
+        :navigationEnabled="true"
+        class="carousel-1">
         <Slide>
-          Slide 1 Content
+          <div class="slide-text">
+            <h3>Nuestras <br> <strong>Raquetas</strong></h3>
+            <p>Conoce nuestras raquetas y <br> aprende a jugar Tennis cómo un <br> profesional.</p>
+          </div>
+          <img src="@/assets/images/ball-color.jpg" alt="">
         </Slide>
         <Slide>
-          Slide 2 Content
+          <div class="slide-text">
+            <h3>Nuestras <br> <strong>Raquetas</strong></h3>
+            <p>Conoce nuestras raquetas y <br> aprende a jugar Tennis cómo un <br> profesional.</p>
+          </div>
+          <img src="@/assets/images/ball-color.jpg" alt="">
         </Slide>
         <Slide>
-          Slide 3 Content
+          <div class="slide-text">
+            <h3>Nuestras <br> <strong>Raquetas</strong></h3>
+            <p>Conoce nuestras raquetas y <br> aprende a jugar Tennis cómo un <br> profesional.</p>
+          </div>
+          <img src="@/assets/images/ball-color.jpg" alt="">
         </Slide>
         <Slide>
-          Slide 4 Content
+          <div class="slide-text">
+            <h3>Nuestras <br> <strong>Raquetas</strong></h3>
+            <p>Conoce nuestras raquetas y <br> aprende a jugar Tennis cómo un <br> profesional.</p>
+          </div>
+          <img src="@/assets/images/ball-color.jpg" alt="">
         </Slide>
     </Carousel>
     </section>
@@ -124,6 +143,31 @@ export default {
         }
       }
     }
+  }
+  .section-2{
+    .carousel-1{
+      width: 530px;
+      .slide-text{
+        position: absolute;
+        top: 38px;
+        right: 71px;
+        h3{
+          font-size: 50px;
+          color: #fff;
+          line-height: 1.28;
+          letter-spacing: -0.06px;
+        }
+        p{
+          font-size: 18px;
+          color: #fff;
+          line-height: 1.67;
+          letter-spacing: 0.51px;
+        }
+      }
+      img{
+        width: 530px;
+      }
+    } 
   }
 }
 </style>
