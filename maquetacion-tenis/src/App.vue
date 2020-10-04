@@ -17,16 +17,35 @@
         </div>
       </div>
     </section>
+    <section class="section-2">
+      <Carousel>
+        <Slide>
+          Slide 1 Content
+        </Slide>
+        <Slide>
+          Slide 2 Content
+        </Slide>
+        <Slide>
+          Slide 3 Content
+        </Slide>
+        <Slide>
+          Slide 4 Content
+        </Slide>
+    </Carousel>
+    </section>
   </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar'
+import { Carousel, Slide } from 'vue-carousel';
 
 export default {
   name: 'App',
   components: {
-    Navbar
+    Navbar,
+    Carousel,
+    Slide
   }
 }
 </script>
