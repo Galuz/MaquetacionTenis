@@ -57,15 +57,27 @@
       :navigationEnabled="true"
       class="carousel-2">
       <Slide>
+        <i>
+          <span>1</span>
+        </i>
         <img src="@/assets/images/racket.png" alt="">
       </Slide>
       <Slide>
+        <i>
+          <span>2</span>
+        </i>
         <img src="@/assets/images/racket.png" alt="">
       </Slide>
       <Slide>
+        <i>
+          <span>3</span>
+        </i>
         <img src="@/assets/images/racket.png" alt="">
       </Slide>
       <Slide>
+        <i>
+          <span>4</span>
+        </i>
         <img src="@/assets/images/racket.png" alt="">
       </Slide>
     </Carousel>

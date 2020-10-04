@@ -110,6 +110,24 @@
     }
     .carousel-2 {
         .VueCarousel-slide {
+            position: relative;
+            i {
+                position: absolute;
+                top: 11px;
+                left: 17px;
+                width: 39px;
+                height: 39px;
+                border: 1px solid #cbe346;
+                border-radius: 50%;
+                background-color: #cbe346;
+                display: flex;
+                span {
+                    margin: auto;
+                    font-style: normal;
+                    font-size: 17px;
+                    color: #fff;
+                }
+            }
             @media(min-width: 992px) {
                 margin: 0 18px;
                 &:first-child {
