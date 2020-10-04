@@ -71,6 +71,24 @@
     </Carousel>
     </section>
     <section class="section-3"></section>
+    <footer>
+      <div>
+        <div class="links">
+          <a href="#">Inicio</a>
+          <a href="#">Acerca de nosotros</a>
+          <a href="#">Historia</a>
+          <a href="#">Contacto</a>
+        </div>
+        <div class="social">
+          <img src="@/assets/images/linkedin.svg" alt="">
+          <img src="@/assets/images/group-24.svg" alt="">
+          <img src="@/assets/images/group-25.svg" alt="">
+          <img src="@/assets/images/group-22.svg" alt="">
+          <img src="@/assets/images/group-26.svg" alt="">
+        </div>
+      </div>
+      <img src="@/assets/images/tennisBall.svg" alt="">
+    </footer>
   </div>
 </template>
 
@@ -201,6 +219,40 @@ export default {
     background-size: cover;
     background-position: center;
     height: 586px;
+  }
+  footer{
+    display: flex;
+    padding: 64px 63px 58px 78px;
+    height: 203px;
+    background-color: #cbe346;
+    .links{
+      margin-bottom: 13px;
+      a{
+        color: #2b3049;
+        font-size: 13px;
+        margin: 16px;
+        letter-spacing: 1.14px;
+        line-height: 37px;
+        &:first-child{
+          margin-left: 0;
+        }
+        &:hover,
+        &:focus{
+          font-family: 'HelveticaNeue-Bold';
+        }
+      }
+    }
+    .social{
+      img{
+      margin: 0 6px;
+        &:first-child{
+          margin-left: 0;
+        }
+      }
+    }
+    >img{
+      margin-left: auto;
+    }
   }
 }
 </style>
