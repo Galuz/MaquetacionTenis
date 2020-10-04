@@ -110,6 +110,10 @@ export default {
 #app{
   font-family: 'HelveticaNeue';
   header{
+    padding: 0 16px;
+    @media(min-width: 992px){
+      padding: 0;
+    }
     display: flex;
     flex-direction: column;
     background: url('assets/images/group@2x.png');
@@ -132,14 +136,20 @@ export default {
         color: #fff;
         line-height: 1.28;
         letter-spacing: -0.05px;
-        margin: 0;
+        margin: 0 16px 16px 16px;
+        @media(min-width: 992px){
+          margin: 0;
+        }
         strong{
           font-family: 'HelveticaNeue-Bold';
           color: #cbe346;
         }
       }
       button{
-        margin-top: 32px;
+        margin: 32px 16px 0 16px;
+        @media(min-width: 992px){
+          margin: 32px 0 0 0;
+        }
       }
     }
   }
