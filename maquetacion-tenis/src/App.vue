@@ -51,6 +51,24 @@
           <img src="@/assets/images/ball-color.jpg" alt="">
         </Slide>
     </Carousel>
+    
+    <Carousel
+      :perPageCustom="[[992, 3]]"
+      :paginationEnabled="false"
+      class="carousel-2">
+      <Slide>
+        <img src="@/assets/images/racket.png" alt="">
+      </Slide>
+      <Slide>
+        <img src="@/assets/images/racket.png" alt="">
+      </Slide>
+      <Slide>
+        <img src="@/assets/images/racket.png" alt="">
+      </Slide>
+      <Slide>
+        <img src="@/assets/images/racket.png" alt="">
+      </Slide>
+    </Carousel>
     </section>
   </div>
 </template>
@@ -145,6 +163,7 @@ export default {
     }
   }
   .section-2{
+    display: flex;
     .carousel-1{
       width: 530px;
       .slide-text{
@@ -166,6 +185,13 @@ export default {
       }
       img{
         width: 530px;
+      }
+    }
+    .carousel-2{
+      width: calc(100% - 530px);
+      margin: auto 0 auto 52px;
+      img{
+        width: 288px;
       }
     } 
   }
