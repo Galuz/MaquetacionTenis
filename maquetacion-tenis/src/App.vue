@@ -281,31 +281,42 @@ export default {
   }
   footer{
     display: flex;
-    padding: 64px 63px 58px 78px;
+    padding: 32px 16px;
     height: 203px;
     background-color: #cbe346;
-    .links{
-      margin-bottom: 13px;
-      a{
-        color: #2b3049;
-        font-size: 13px;
-        margin: 16px;
-        letter-spacing: 1.14px;
-        line-height: 37px;
-        &:first-child{
-          margin-left: 0;
-        }
-        &:hover,
-        &:focus{
-          font-family: 'HelveticaNeue-Bold';
+    @media(min-width: 992px){
+      padding: 64px 63px 58px 78px;
+    }
+    >div{
+      display: flex;
+      flex-direction: column;
+      .links{
+        margin-bottom: 13px;
+        a{
+          color: #2b3049;
+          font-size: 13px;
+          margin: 16px;
+          letter-spacing: 1.14px;
+          line-height: 37px;
+          &:first-child{
+            margin-left: 0;
+          }
+          &:hover,
+          &:focus{
+            font-family: 'HelveticaNeue-Bold';
+          }
         }
       }
-    }
-    .social{
-      img{
-      margin: 0 6px;
-        &:first-child{
-          margin-left: 0;
+      .social{
+        margin-top: auto;
+        @media(min-width: 992px){
+          margin-top: 0;
+        }
+        img{
+        margin: 0 6px;
+          &:first-child{
+            margin-left: 0;
+          }
         }
       }
     }
