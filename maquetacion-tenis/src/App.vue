@@ -157,9 +157,10 @@ export default {
     background-color: #f3f4f8;
     display: flex;
     flex-direction: column;
-    padding: 72px 0 67px 0;
+    padding: 32px 16px;
     @media(min-width: 992px){
       flex-direction: row;
+      padding: 72px 0 67px 0;
     }
     span{
       line-height: 2;
@@ -169,9 +170,11 @@ export default {
       font-size: 15px;
       text-align: left;
       color: #cbe346;
+      margin-bottom: 16px;
       @media(min-width: 992px){
         width: 174px;
         margin-left: 255px;  
+        margin-bottom: 0;
         text-align: right;
       }
     }
@@ -202,12 +205,15 @@ export default {
           color: #787878;
           line-height: 1.78;
           letter-spacing: 0.51px;
-          margin: 0;
+          margin-bottom: 16px;
+          @media(min-width: 992px){
+            margin: 0;
+          }
         }
         button{
           margin-left: auto;
           margin-right: auto;
-          @media(min-width: 992){
+          @media(min-width: 992px){
             margin-top: auto;
             margin-right: 0;
           }
