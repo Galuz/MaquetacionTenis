@@ -70,6 +70,7 @@
       </Slide>
     </Carousel>
     </section>
+    <section class="section-3"></section>
   </div>
 </template>
 
@@ -194,6 +195,12 @@ export default {
         width: 288px;
       }
     } 
+  }
+  .section-3{
+    background: url('assets/images/action-athlete-ball.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 586px;
   }
 }
 </style>
