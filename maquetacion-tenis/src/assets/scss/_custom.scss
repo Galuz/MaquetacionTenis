@@ -1,0 +1,48 @@
+.navbar-component .navbar {
+    padding: 0;
+    .navbar-brand {
+        @media(min-width: 992px) {
+            border-right: 1px solid #fff;
+            margin: 0;
+            padding: 25px 32px 0 36px;
+            height: 785px;
+        }
+        img {
+            width: 37px;
+            height: 37px;
+        }
+    }
+    .navbar-collapse {
+        background-color: #fff;
+        padding: 16px;
+        .nav-link {
+            color: #000;
+        }
+        @media(min-width: 992px) {
+            background-color: transparent;
+            padding: 0 94px 0 67px;
+            margin-top: 44px;
+            margin-bottom: auto;
+            .navbar-nav {
+                .nav-item {
+                    font-size: 16px;
+                    .nav-link {
+                        padding: 7px 32px;
+                        color: #fff;
+                        letter-spacing: 1.5px;
+                        font-family: 'HelveticaNeue';
+                        &:hover,
+                        &:focus {
+                            font-family: 'HelveticaNeue-Bold';
+                        }
+                    }
+                }
+                &:last-child {
+                    .nav-link {
+                        padding: 7px 6px;
+                    }
+                }
+            }
+        }
+    }
+}
