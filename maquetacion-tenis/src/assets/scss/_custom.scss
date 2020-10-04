@@ -88,4 +88,14 @@
             }
         }
     }
+    .carousel-2 {
+        .VueCarousel-slide {
+            @media(min-width: 992px) {
+                margin: 0 18px;
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
 }

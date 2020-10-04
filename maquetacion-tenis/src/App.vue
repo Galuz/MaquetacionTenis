@@ -53,7 +53,7 @@
     </Carousel>
     
     <Carousel
-      :perPageCustom="[[992, 3]]"
+      :perPageCustom="[[0, 1], [992, 3]]"
       :paginationEnabled="false"
       class="carousel-2">
       <Slide>
@@ -123,7 +123,10 @@ export default {
     .title{
       position: absolute;
       top: 37.7%;
-      left: 173px;
+      left: 0;
+      @media(min-width: 992px){
+        left: 173px;
+      }
       h1{
         font-size: 53px;
         color: #fff;
@@ -143,23 +146,36 @@ export default {
   .section-1{
     background-color: #f3f4f8;
     display: flex;
+    flex-direction: column;
     padding: 72px 0 67px 0;
+    @media(min-width: 992px){
+      flex-direction: row;
+    }
     span{
       line-height: 2;
       letter-spacing: 1.87px;;
-      width: 174px;
+      width: auto;
       font-family: 'HelveticaNeue-Medium';
       font-size: 15px;
-      text-align: right;
+      text-align: left;
       color: #cbe346;
-      margin-left: 255px;
+      @media(min-width: 992px){
+        width: 174px;
+        margin-left: 255px;  
+        text-align: right;
+      }
     }
     >div{
-      margin-left: 51px;
       width: 100%;
-      margin-right: 168px;
+      @media(min-width: 992px){
+        margin-left: 51px;
+        margin-right: 168px;
+      }
       h2{
-        font-size: 50px;
+        font-size: 32px;
+        @media(min-width: 992px){
+          font-size: 50px;
+        }
         line-height: 1.14;
         letter-spacing: -0.06px;
         color: #1e2335;
@@ -167,6 +183,10 @@ export default {
       }
       >div{
         display: flex;
+        flex-direction: column;
+        @media(min-width: 992px){
+          flex-direction: row;
+        }
         p{
           font-size: 18px;
           color: #787878;
@@ -175,16 +195,27 @@ export default {
           margin: 0;
         }
         button{
-          margin-top: auto;
           margin-left: auto;
+          margin-right: auto;
+          @media(min-width: 992){
+            margin-top: auto;
+            margin-right: 0;
+          }
         }
       }
     }
   }
   .section-2{
     display: flex;
+    flex-direction: column;
+    @media(min-width: 992px){
+      flex-direction: row;
+    }
     .carousel-1{
-      width: 530px;
+      width: 100%;
+      @media(min-width: 992px){
+        width: 530px;
+      } 
       .slide-text{
         position: absolute;
         top: 38px;
@@ -203,22 +234,33 @@ export default {
         }
       }
       img{
-        width: 530px;
+        width: 100%;
+        @media(min-width: 992px){
+          width: 530px;
+        }
       }
     }
     .carousel-2{
-      width: calc(100% - 530px);
-      margin: auto 0 auto 52px;
+      @media(min-width: 992px){
+        width: calc(100% - 582px);
+        margin: auto 0 auto 52px;
+      }
       img{
-        width: 288px;
+        @media(min-width: 992px){
+          width: 288px;
+        }
+        width: 100%;
       }
     } 
   }
   .section-3{
     background: url('assets/images/action-athlete-ball.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: left;
     height: 586px;
+    @media(min-width: 992px){
+      background-position: center;
+    }
   }
   footer{
     display: flex;
