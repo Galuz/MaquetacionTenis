@@ -1,1 +1,20 @@
 @import "custom";
+.button-rounded {
+    background-color: transparent;
+    border-radius: 26.5px;
+    font-size: 13px;
+    height: 53px;
+    &.button-white {
+        font-family: 'HelveticaNeue-Bold';
+        padding: 15px 30px;
+        border: 1px solid #fff;
+        color: #fff;
+    }
+    &.button-black {
+        font-family: 'HelveticaNeue-Medium';
+        padding: 15px 38px;
+        border: 1px solid #282e47;
+        color: #273048;
+        width: 234px;
+    }
+}

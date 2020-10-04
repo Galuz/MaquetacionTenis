@@ -4,9 +4,19 @@
       <Navbar class="navbar-component"></Navbar>
       <div class="title">
         <h1>Las mejores raquetas para <br> jugar <strong>Tennis</strong></h1>
-        <button>ACERCA DE NOSOTROS</button>
+        <button class="button-rounded button-white">ACERCA DE NOSOTROS</button>
       </div>
     </header>
+    <section class="section-1">
+      <span>TENNIS</span>
+      <div>
+        <h2>Raquetas.Accesorios.<br>Pelotas.</h2>
+        <div>
+          <p>Conoce nuestras raquetas y aprende a jugar <br> Tennis cómo un profesional.</p>
+          <button class="button-rounded button-black">HISTORIA</button>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -51,13 +61,48 @@ export default {
         }
       }
       button{
-        font-family: 'HelveticaNeue-Bold';
         margin-top: 32px;
-        padding: 15px 30px;
-        background-color: transparent;
-        border: 1px solid #fff;
-        border-radius: 26.5px;
-        color: #fff;
+      }
+    }
+  }
+  .section-1{
+    background-color: #f3f4f8;
+    display: flex;
+    padding: 72px 0 67px 0;
+    span{
+      line-height: 2;
+      letter-spacing: 1.87px;;
+      width: 174px;
+      font-family: 'HelveticaNeue-Medium';
+      font-size: 15px;
+      text-align: right;
+      color: #cbe346;
+      margin-left: 255px;
+    }
+    >div{
+      margin-left: 51px;
+      width: 100%;
+      margin-right: 168px;
+      h2{
+        font-size: 50px;
+        line-height: 1.14;
+        letter-spacing: -0.06px;
+        color: #1e2335;
+        margin-bottom: 32px;
+      }
+      >div{
+        display: flex;
+        p{
+          font-size: 18px;
+          color: #787878;
+          line-height: 1.78;
+          letter-spacing: 0.51px;
+          margin: 0;
+        }
+        button{
+          margin-top: auto;
+          margin-left: auto;
+        }
       }
     }
   }
